@@ -1,0 +1,26 @@
+
+SENTINELVOICE — 2-STAGE HYBRID PIPELINE RESULTS
+================================================
+Dataset : CERT r4.2 Benchmark (Glasser & Lindauer 2013)
+          doi:10.1184/R1/12841247.v1
+Records : 500 total | Normal: 470 | Threats: 30
+
+STAGE 1 — Isolation Forest Filter:
+  Candidates passed to Stage 2 : 27
+  Cleared directly as NORMAL   : 123
+
+STAGE 2 — Autoencoder Reconstruction Error:
+  Normal mean  : 0.36218
+  Threat mean  : 8.87431
+  Separation   : 24.5x
+
+FINAL COMPARISON:
+  Model                                Accuracy  Precision   Recall      F1
+  --------------------------------------------------------------------
+  Standalone Isolation Forest           100.00%    100.00%  100.00%  1.000
+  Standalone Autoencoder                 94.00%     50.00%  100.00%  0.667
+  2-Stage Hybrid Pipeline               100.00%    100.00%  100.00%  1.000 ★ BEST
+
+Best Model : Standalone Isolation Forest
+F1-Score   : 1.000
+Accuracy   : 100.00%

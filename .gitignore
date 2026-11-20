@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+ai-engine/Lib/
+ai-engine/Scripts/
+ai-engine/Include/
+ai-engine/pyvenv.cfg
+
+# Node
+node_modules/
+npm-debug.log*
+.npm
+
+# Output (large files)
+ai-engine/training/output/*.pkl
+ai-engine/training/output/*.npz
+ai-engine/training/output/hybrid_models/
+
+# Keep images and docs in output
+!ai-engine/training/output/*.png
+!ai-engine/training/output/*.docx
+!ai-engine/training/output/*.csv
+!ai-engine/training/output/*.md
+!ai-engine/training/output/*.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1-Score
+Isolation Forest,0.92,0.42857142857142855,1.0,0.6
+One-Class SVM,0.92,0.42857142857142855,1.0,0.6
+Local Outlier Factor,0.96,0.6,1.0,0.75
+🏆 Ensemble (Voting),0.9266666666666666,0.45,1.0,0.6206896551724138
